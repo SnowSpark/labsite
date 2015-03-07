@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- jquery & Bootstrap js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- End Of jquery & Bootstrap js -->
+        <meta name="keywords" content="keywords">
+        <meta name="description" content="وضع وصف محتوى الموقع">
+        <link rel="stylesheet" type="text/css" href="css/defult.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+		<title>المعمل أي كان إسمه</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+        <div class="row nav-row">
+          <div class="col-lg-12 col-md-12 nav-div">.col-sm-4</div>
+        </div>
+        
+        
+        <!--
+      <div class="div1" id="blue">
+             <ul>
+                 <li>
+                    <a href="#black"> black </a>
+                 </li>
+                 <li>
+                     <a href="#blue"> blue </a>
+                 </li>
+                 <li>
+                     <a href="#red"> red  </a>
+                 </li>
+             </ul> 
+          <div id="box1">box1</div>
+<div id="box2">box2</div>
+    </div>
+      <div class="div2" id="red">
+             <ul>
+                 <li>
+                    <a href="#black"> black </a>
+                 </li>
+                 <li>
+                     <a href="#blue"> blue </a>
+                 </li>
+                 <li>
+                     <a href="#red"> red  </a>
+                 </li>
+             </ul> </div>
+      <div class="div3" id="black">
+             <ul>
+                 <li>
+                    <a href="#black"> black </a>
+                 </li>
+                 <li>
+                     <a href="#blue"> blue </a>
+                 </li>
+                 <li>
+                     <a href="#red"> red  </a>
+                 </li>
+             </ul> </div> -->
+    
+	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+
+}); 
+</script>
+    <script type="text/javascript">
+        var setSkrollr = function($el, data) {
+    for (var i = 0, l = data.length; i < l; i++) {
+        var d = data[i],
+            px = d[0];
+            css = d[1];
+        $el.attr('data-' + px, css);
+    }
+}
+
+jQuery(function($) {
+    setSkrollr($('#box2'), [[0, 'transform:translateX(-100%)'], [250, 'transform:translateX(100%)'], [500, 'transform:translateX(-100%)']]);
+    
+    skrollr.init({
+        smoothScrolling: false
+    });
+});
+    </script>
+
+
+		<!-- jquery & Bootstrap js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- End Of jquery & Bootstrap js -->
+		
+	</body>
+</html>
