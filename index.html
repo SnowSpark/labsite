@@ -16,32 +16,6 @@
         <link rel="icon" type="image/png" href="img/favicon.png">
 		<title>First Lab</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-
-        
-             <script> 
-        function slider(){
-            $(".slider #1").show("fade",500);
-            $(".slider #1").delay(5500).hide("slide",{direction:'left'},500);
-                        
-        
-            var sc=$(".slider div").size();
-            var count=2;
-            
-            setInterval(function(){
-            
-                $(".slider #"+count).show("slide",{direction:'right'},500);
-                $(".slider #"+count).delay(5500).hide("slide",{direction:'left'},500);
-                
-                if(count == sc){
-                    count = 1;
-                }else{
-                    count = count +1;
-                }
-                },6500);
-            
-             
-        }
-                 </script>  
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -63,6 +37,17 @@
                 </div>
             </div>
         <div class="row first-slide" id="first-slide">
+            <div class="login">
+                <div class="login-nav">
+                    <ul>
+                        <li><a href="#">عربي</a></li>
+                        <li><a href="#" class="login1-btn">log in</a></li>
+                        <li><a href="#" class="login2-btn">log in 2</a></li>
+                    </ul>
+                </div>
+                <div class="login1">log in 1</div>
+                <div class="login2">log in 2</div>
+            </div>
             <div class="row gallery no-gutter">
             <div id="" class="slider col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 ">
                     <div id="1"><img  src="gallery/img1.jpg"></div>
@@ -98,96 +83,136 @@
         <div class="row third-slide" id="third-slide">
             
         </div>
-        
-        <!--
-      <div class="div1" id="blue">
-             <ul>
-                 <li>
-                    <a href="#black"> black </a>
-                 </li>
-                 <li>
-                     <a href="#blue"> blue </a>
-                 </li>
-                 <li>
-                     <a href="#red"> red  </a>
-                 </li>
-             </ul> 
-          <div id="box1">box1</div>
-<div id="box2">box2</div>
-    </div>
-      <div class="div2" id="red">
-             <ul>
-                 <li>
-                    <a href="#black"> black </a>
-                 </li>
-                 <li>
-                     <a href="#blue"> blue </a>
-                 </li>
-                 <li>
-                     <a href="#red"> red  </a>
-                 </li>
-             </ul> </div>
-      <div class="div3" id="black">
-             <ul>
-                 <li>
-                    <a href="#black"> black </a>
-                 </li>
-                 <li>
-                     <a href="#blue"> blue </a>
-                 </li>
-                 <li>
-                     <a href="#red"> red  </a>
-                 </li>
-             </ul> </div> -->
-    
-	<script type="text/javascript" src="js/skrollr.js"></script>
-	<script> 
-        
-
+            
         
         
-<!----- JQUERY FOR SLIDING NAVIGATION --->   
-$(document).ready(function() {
-  $('a[href*=#]').each(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-       if ($target) {
-         var targetOffset = $target.offset().top;
+        <!-- gallery jquery -->
+        <!-- gallery jquery -->
+        <!-- gallery jquery -->
+        <script src="js/gallery.js" ></script>
+        <!-- end gallery jquery -->
+        <!-- end gallery jquery -->
+        <!-- end gallery jquery -->
+        
+        
+        
+        
+        
+        
+        
+        <!-- log in jquery -->
+        <!-- log in jquery -->
+        <!-- log in jquery -->
+        <script> 
+            $(document).ready(function(){
+                $(".login1-btn").click(function(){
+                    if($(".login2").css("display") == "block"){
+                        $(".login2").slideUp(600);
+                        $(".login1").delay(600).slideToggle(600);
+                    }else { 
+                        $(".login1").slideToggle("slow");
+                    };
+                });
+                $(".login2-btn").click(function(){
+                    if($(".login1").css("display") == "block"){
+                        $(".login1").slideUp(600);
+                        $(".login2").delay(600).slideToggle(600);
+                    }else { 
+                        $(".login2").slideToggle("slow");
+                    };
+                });
+                $(".login").mouseleave(function(){
+                    if($(".login1").css("display") == "block"){
+                        $(".login1").slideUp(600);
+                    };
+                    if($(".login2").css("display") == "block"){
+                        $(".login2").slideUp(600);
+                    };
+                });
+            });
+        </script>
+        <!-- end log in jquery -->
+        <!-- end log in jquery -->
+        <!-- end log in jquery -->
+        
+        
+        
+                        <!--
+                $(".login" ).mouseleave(function(){
+                    if($(".login1").css("display") == "block"){
+                        $(".login1").slideUp(600);
+                    };
+                    if($(".login2").css("display") == "block"){
+                        $(".login2").slideUp(600);
+                    };
+                });
+                -->
+        
+        
+        
+        
+        
+        
+        <!-- sliding navigation jquery -->
+        <!-- sliding navigation jquery -->
+        <!-- sliding navigation jquery -->
+        <script type="text/javascript" src="js/skrollr.js"></script>
+        <script> 
+            $(document).ready(function() {
+                $('a[href*=#]').each(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                        && location.hostname == this.hostname
+                        && this.hash.replace(/#/,'') ) {
+                        var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+                        var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                        
+                        if ($target) {
+                            var targetOffset = $target.offset().top;
+                            <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+                            $(this).click(function() {
+                            $("#nav li a").removeClass("active");
+                            $(this).addClass('active');
+                            $('html, body').animate({scrollTop: targetOffset}, 1000);
+                            return false;
+                            });
+                        }
+                    }
+                });
+            }); 
+        </script>
+        <!-- end sliding navigation jquery -->
+        <!-- end sliding navigation jquery -->
+        <!-- end sliding navigation jquery -->
+        
+        
+        
+        
+        
+        <!-- div animation jquery -->
+        <!-- div animation jquery -->
+        <!-- div animation jquery -->
+        <script type="text/javascript">
+            var setSkrollr = function($el, data) {
+                    for (var i = 0, l = data.length; i < l; i++) {
+                    var d = data[i],
+                    px = d[0];
+                    css = d[1];
+                    $el.attr('data-' + px, css);
+                    }
+                }
 
-<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
-         $(this).click(function() {
-            $("#nav li a").removeClass("active");
-            $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
-           return false;
-         });
-      }
-    }
-  });
-
-
-}); 
-</script>
-    <script type="text/javascript">
-        var setSkrollr = function($el, data) {
-    for (var i = 0, l = data.length; i < l; i++) {
-        var d = data[i],
-            px = d[0];
-            css = d[1];
-        $el.attr('data-' + px, css);
-    }
-}
-
-jQuery(function($) {
-    setSkrollr($('#box2'), [[0, 'transform:translateX(-100%)'], [250, 'transform:translateX(100%)'], [500, 'transform:translateX(-100%)']]);
-    
-    skrollr.init({
-        smoothScrolling: false
-    });
-});
-    </script>
+                jQuery(function($) {
+                    setSkrollr($('#box2'), [[0, 'transform:translateX(-100%)'], [250, 'transform:translateX(100%)'], [500, 'transform:translateX(-100%)']]);
+                    skrollr.init({
+                    smoothScrolling: false
+                });
+            });
+        </script>
+        <!-- end div animation jquery -->
+        <!-- end div animation jquery -->
+        <!-- end div animation jquery -->
+        
+        
+        
 	</body>
 </html>

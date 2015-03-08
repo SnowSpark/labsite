@@ -13,7 +13,16 @@ body { margin: 0; }
   padding-left:0;
 }
 
+.row { margin-left: 0px !important; margin-right: 0px !important; }
 .first-slide { height:100vh;text-align: center; min-height: 768px; background-image: url(../img/background_image.jpg);background-size: cover;background-repeat: no-repeat;background-position: center top; }
+
+.login {   float: right; margin-top:-11px; height: auto;}
+.login-nav { min-height: 1px; }
+.login-nav li { float: right; list-style: none; font-size: 14;background-color: black; }
+.login-nav li a { display: block; padding: 3px 15px; color: white;}
+.login-nav li a:active { display: block; padding: 3px 15px; color: white;}
+.login1,.login2  { width: 236px; height: 130px; background-color: black; margin-top: 25px; display: none; color: white;position: inherit;}
+
 .nav-row { margin-top: 25px; background-image: url(../img/nav%20bg.png);height: 130px; position: fixed;width: 100%; text-align: center; }
 .nav-div { text-align: center;  margin-left: auto; margin-right: auto; width: auto; display: block;color: white;}
 .nav-row p { font-size: 25px; color: white; }
