@@ -58,3 +58,12 @@ function showSlide (id){
         sliderNext = id + 1;
     startSlider();
 };
+
+$(".slider div").hover(
+    function(){
+        stopLoop();
+    },
+    function(){
+        startSlider();
+    }
+);

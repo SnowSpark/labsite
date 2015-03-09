@@ -14,16 +14,11 @@ body { margin: 0; }
 }
 
 .row { margin-left: 0px !important; margin-right: 0px !important; }
-.first-slide { height:100vh;text-align: center; min-height: 768px; background-image: url(../img/background_image.jpg);background-size: cover;background-repeat: no-repeat;background-position: center top; }
+.top-btn { width: 30px; bottom: 20px;  right: 20px; position: absolute;}
+.top-img { width: 30px; }
 
-.login {   float: right; margin-top:-11px; height: auto;}
-.login-nav { min-height: 1px; }
-.login-nav li { float: right; list-style: none; font-size: 14;background-color: black; }
-.login-nav li a { display: block; padding: 3px 15px; color: white;}
-.login-nav li a:active { display: block; padding: 3px 15px; color: white;}
-.login1,.login2  { width: 236px; height: 130px; background-color: black; margin-top: 25px; display: none; color: white;position: inherit;}
 
-.nav-row { margin-top: 25px; background-image: url(../img/nav%20bg.png);height: 130px; position: fixed;width: 100%; text-align: center; }
+.nav-row { margin-top: 25px; background-image: url(../img/nav%20bg.png);height: 130px; position: fixed;width: 100%; text-align: center; z-index: +20; }
 .nav-div { text-align: center;  margin-left: auto; margin-right: auto; width: auto; display: block;color: white;}
 .nav-row p { font-size: 25px; color: white; }
 .nav-row img { width: 50px;margin-top: 10px; margin-left: 20px; }
@@ -34,7 +29,18 @@ body { margin: 0; }
 @media screen and (max-width: 1200px) { .nav-div ul li a {font-size:16px; } }
 @media screen and (min-width: 1200px) { .nav-div ul li a {font-size:20px; } }
 
-.second-slide { height:100vh; min-height: 768px; background-image: url(../img/second%20bg.png);background-size: cover;background-repeat: no-repeat;background-position: center;}
+.first-slide { height:100vh;text-align: center; min-height: 768px; background-image: url(../img/background_image.jpg);background-size: cover;background-repeat: no-repeat;background-position: center top; }
+
+.login {   float: right; margin-top:-11px; height: auto; z-index: +60;}
+.login-nav { min-height: 1px; }
+.login-nav li { float: right; list-style: none; font-size: 14;background-color: black; }
+.login-nav li a { display: block; padding: 3px 15px; color: white;}
+.login-nav li a:active { display: block; padding: 3px 15px; color: white;}
+.login1,.login2  { width: 236px; height: 130px; background-color: black; margin-top: 25px; display: none; color: white;position: inherit;}
 
 
-.third-slide { height:100vh; min-height: 768px; background-image: url(../img/booking.jpg);background-repeat: no-repeat;background-position: right;background-color: #f5f1f2; }
+.second-slide { height:100vh; min-height: 768px; background-image: url(../img/second%20bg.png);background-size: cover;background-repeat: no-repeat;background-position: center; position: relative;}
+
+
+.third-slide { height:100vh; min-height: 768px; background-image: url(../img/booking.jpg);background-repeat: no-repeat;background-position: right;background-color: #f5f1f2;  position: relative;}
+.footer { height: 130px; background-color: black;}
