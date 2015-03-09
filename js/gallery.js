@@ -28,3 +28,33 @@ function startSlider(){
     },3000)
 
 };
+
+function prev(){
+    newSlide = sliderInt -1;
+    showSlide(newSlide);
+}
+
+function next(){
+    newSlide = sliderInt +1;
+    showSlide(newSlide);
+}
+
+function stopLoop() {
+    window.clearInterval(loop);
+}
+
+function showSlide (id){
+    stopLoop();
+            if(id>count){
+                id=1;
+        }else if (id<1){
+            id = count;
+        }
+
+        $(".slider>div").delay(500).hide("slide",{direction:'left'},500);
+        $(".slider>div#"+id).delay(500).show("slide",{direction:'right'},500);
+
+        sliderInt = id;
+        sliderNext = id + 1;
+    startSlider();
+};
