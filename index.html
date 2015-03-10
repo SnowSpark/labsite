@@ -50,6 +50,7 @@
                     Last name: <input type="text" name="lname"><br></div>
                 <div class="login2">log in 2</div>
             </div>
+            <div class="social" ><a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="follow us on facebook"></a></div>
             <div class="row gallery no-gutter">
             <div id="" class="slider col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 ">
                     <div id="1"><img  src="gallery/img1.jpg"></div>
@@ -88,10 +89,21 @@
             <a href="#first-slide" class="top-btn"><img src="img/top.png" class="top-img"></a>
         </div>
         
-        
+        <!-- footer div -->        
+        <!-- footer div -->             
+        <!-- footer div -->             
         <div class="row footer">
+            
         
-        </div>
+              
+            <div class="row copy"> 
+                <p>&copy; Copy Right to First Lab</br>
+                Powerd & Designed By<a href="#"> SnowSpark</a></p>
+            </div>
+        </div> 
+        <!-- footer div -->             
+        <!-- footer div -->             
+        <!-- footer div -->     
             
         
         
@@ -128,6 +140,14 @@
                         $(".login2").delay(600).slideToggle(600);
                     }else { 
                         $(".login2").slideToggle("slow");
+                    };
+                });
+                $(".login").mouseleave(function(){
+                    if($(".login1").css("display") == "block"){
+                        $(".login1").slideUp(600);
+                    };
+                    if($(".login2").css("display") == "block"){
+                        $(".login2").slideUp(600);
                     };
                 });
             });

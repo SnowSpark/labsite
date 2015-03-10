@@ -40,9 +40,14 @@ body { margin: 0; }
 .login1,.login2  { width: 236px; height: 130px; background-color: black; margin-top: 25px; display: none; color: white;position: inherit;}
 .login input { color: black; }
 
+.social { position: absolute; margin-top: 2px; margin-left: 5px; }
 
 .second-slide { height:100vh; min-height: 768px; background-image: url(../img/second%20bg.png);background-size: cover;background-repeat: no-repeat;background-position: center; position: relative;}
 
 
 .third-slide { height:100vh; min-height: 768px; background-image: url(../img/booking.jpg);background-repeat: no-repeat;background-position: right;background-color: #f5f1f2;  position: relative;}
-.footer { height: 130px; background-color: black;}
+.footer {  background-color: black;}
+.copy { text-align: center; }
+.copy p{ color: white; font-size: 14px; }
+.copy a , .copy a:visited ,.copy a:active ,.copy a:focus{ color: white; font-size: 14px; }
+.copy a:hover { text-decoration: underline; }
