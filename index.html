@@ -24,16 +24,18 @@
 		<![endif]-->
 	</head>
 	<body onload="slider();">
-            <div class=" nav-row">
-                    <img src="img/logo.png">
-                <p>فرست لاب للتحاليل الطبية</p>
-                <div class="col-lg-12 col-md-12 nav-div">
-                    <ul>
-                        <li><a href="#first-slide">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">find us</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
+            <div class=" nav-row" >
+                <img src="img/logo.png">
+                <div class="left-nav">
+                    <h1>First Lab Clinical Laboratory</h1>
+                    <div class="nav-div">
+                        <ul>
+                            <li><a href="#first-slide">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">find us</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         <div class="row first-slide" id="first-slide">
@@ -53,10 +55,10 @@
             <div class="social" ><a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="follow us on facebook"></a></div>
             <div class="row gallery no-gutter">
             <div id="" class="slider col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 ">
-                    <div id="1"><img  src="gallery/img1.jpg"></div>
-                    <div id="2"><img src="gallery/img2.jpg"></div>
-                    <div id="3"><img src="gallery/img3.jpg"></div>
-                    <div id="4"><img src="gallery/img4.jpg"></div>
+                    <div id="1"><p>First Lab Clinical Laboratory</p><img  src="gallery/img1.jpg"></div>
+                    <div id="2"><p>First Lab Clinical Laboratory</p><img src="gallery/img2.jpg"></div>
+                    <div id="3"><p>First Lab Clinical Laboratory</p><img src="gallery/img3.jpg"></div>
+                    <div id="4"><p>First Lab Clinical Laboratory</p><img src="gallery/img4.jpg"></div>
                 </div>   
             </div>
             <div class="row nav-gallery">
@@ -79,12 +81,36 @@
         
         
         <div class="row second-slide" id="second-slide">
+            <!-- content place holder -->
+            <!-- content place holder -->
+            <!-- content place holder -->
+            <!-- content place holder -->
+            <div class="second-slide-content">
+            
+            
+            </div>
+            <!-- content place holder end -->
+            <!-- content place holder end-->
+            <!-- content place holder end-->
+            <!-- content place holder end-->
             
             <a href="#first-slide" class="top-btn"><img src="img/top.png" class="top-img"></a>
         </div>
         
         
         <div class="row third-slide" id="third-slide">
+            <!-- content place holder -->
+            <!-- content place holder -->
+            <!-- content place holder -->
+            <!-- content place holder -->
+            <div class="third-slide-content">
+            
+            
+            </div>
+            <!-- content place holder end -->
+            <!-- content place holder end-->
+            <!-- content place holder end-->
+            <!-- content place holder end-->
             
             <a href="#first-slide" class="top-btn"><img src="img/top.png" class="top-img"></a>
         </div>
@@ -155,22 +181,7 @@
         <!-- end log in jquery -->
         <!-- end log in jquery -->
         <!-- end log in jquery -->
-        
-        
-        
-                        <!--
-                $(".login" ).mouseleave(function(){
-                    if($(".login1").css("display") == "block"){
-                        $(".login1").slideUp(600);
-                    };
-                    if($(".login2").css("display") == "block"){
-                        $(".login2").slideUp(600);
-                    };
-                });
-                -->
-        
-        
-        
+
         
         
         
@@ -212,23 +223,7 @@
         <!-- div animation jquery -->
         <!-- div animation jquery -->
         <!-- div animation jquery -->
-        <script type="text/javascript">
-            var setSkrollr = function($el, data) {
-                    for (var i = 0, l = data.length; i < l; i++) {
-                    var d = data[i],
-                    px = d[0];
-                    css = d[1];
-                    $el.attr('data-' + px, css);
-                    }
-                }
-
-                jQuery(function($) {
-                    setSkrollr($('#box2'), [[0, 'transform:translateX(-100%)'], [250, 'transform:translateX(100%)'], [500, 'transform:translateX(-100%)']]);
-                    skrollr.init({
-                    smoothScrolling: false
-                });
-            });
-        </script>
+        <script src="js/animation.js" ></script>
         <!-- end div animation jquery -->
         <!-- end div animation jquery -->
         <!-- end div animation jquery -->

@@ -12,3 +12,6 @@
 
 .two-btns { display: inline-block; }
 .two-btns img { width: 250px; margin-top: 20px;}
+
+#1,#2,#3,#4 { position: relative; } 
+.slider p { position: absolute; float: left; font-size: 30px; margin-left: 20px;margin-top: 20%; }

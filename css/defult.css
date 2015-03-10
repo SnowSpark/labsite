@@ -18,11 +18,12 @@ body { margin: 0; }
 .top-img { width: 30px; }
 
 
-.nav-row { margin-top: 25px; background-image: url(../img/nav%20bg.png);height: 130px; position: fixed;width: 100%; text-align: center; z-index: +1; }
+.nav-row { background-image: url(../img/nav%20bg.png); position: fixed;width: 100%; text-align: center; z-index: +1; }
+.left-nav { float: left; }
 .nav-div { text-align: center;  margin-left: auto; margin-right: auto; width: auto; display: block;color: white;}
-.nav-row p { font-size: 25px; color: white; }
-.nav-row img { width: 50px;margin-top: 10px; margin-left: 20px; }
-.nav-div ul { list-style: none; text-decoration: none; display:inline-block; margin-left: -43px;}
+.nav-row h1 { font-size: 25px; color: white; float: left;margin-left: 7px; }
+.nav-row img { width: 50px;margin-top: 10px; float: right; margin-right: 15px; }
+.nav-div ul { list-style: none; text-decoration: none; display:inline-block; margin-left: -43px; float: left;}
 .nav-div ul li { float: left; margin: -10px 10px 0 10px; }
 .nav-div a , .nav-div a:visited ,.nav-div a:active ,.nav-div a:focus { color: white; text-decoration: none;}
 .nav-div a:hover { color: white; text-decoration: underline;}
@@ -43,9 +44,10 @@ body { margin: 0; }
 .social { position: absolute; margin-top: 2px; margin-left: 5px; }
 
 .second-slide { height:100vh; min-height: 768px; background-image: url(../img/second%20bg.png);background-size: cover;background-repeat: no-repeat;background-position: center; position: relative;}
+.second-slide-content,.third-slide-content { overflow: auto; width: 80vw; background-color: black; margin-top: 100px; margin-left: auto;margin-right: auto; }
 
 
-.third-slide { height:100vh; min-height: 768px; background-image: url(../img/booking.jpg);background-repeat: no-repeat;background-position: right;background-color: #f5f1f2;  position: relative;}
+.third-slide { height:100vh; min-height: 768px;background-color: #f5f1f2;  position: relative;}
 .footer {  background-color: black;}
 .copy { text-align: center; }
 .copy p{ color: white; font-size: 14px; }
