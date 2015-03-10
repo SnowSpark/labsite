@@ -44,7 +44,7 @@ body { margin: 0; }
 .social { position: absolute; margin-top: 2px; margin-left: 5px; }
 
 .second-slide { height:100vh; min-height: 768px; background-image: url(../img/second%20bg.png);background-size: cover;background-repeat: no-repeat;background-position: center; position: relative;}
-.second-slide-content,.third-slide-content { overflow: auto; width: 80vw; background-color: black; margin-top: 100px; margin-left: auto;margin-right: auto; }
+.second-slide-content,.third-slide-content { overflow: auto; width: 80vw; margin-top: 100px; margin-left: auto;margin-right: auto; }
 
 
 .third-slide { height:100vh; min-height: 768px;background-color: #f5f1f2;  position: relative;}
