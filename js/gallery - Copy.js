@@ -15,7 +15,7 @@ function startSlider(){
     loop = setInterval(function(){
 
         if(sliderNext>count){
-           sliderInt = 0;
+           sliderInt = 1;
             sliderNext = 1;
 
         }
@@ -25,7 +25,7 @@ function startSlider(){
 
         sliderInt = sliderNext;
         sliderNext = sliderNext + 1;
-    },6000)
+    },5000)
 
 };
 
